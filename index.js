@@ -6,7 +6,7 @@ const puppeteer = require("puppeteer");
   const page = await browser.newPage();
   page.setDefaultNavigationTimeout(60000);
   await page.goto("https://zen.com.tn/fr");
-  await page.screenshot({ path: "netflix.png" });
+  await page.screenshot({ path: "zen.png" });
   await page.setViewport({ width: 500, height: 500 });
   const title = await page.title();
   const url = await page.url();
